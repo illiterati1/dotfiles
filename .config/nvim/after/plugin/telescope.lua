@@ -48,9 +48,6 @@ end
 vks('n', '<leader>b', builtin.buffers,                'Buffers')
 vks('n', '<leader>r', builtin.grep_string,            'References')
 vks('n', '<leader>p', project_files,                  'Paths' )
--- project_files unifies git_files and find_files
--- vks('n', '<leader>sf', builtin.git_files,              'Git files')
--- vks('n', '<leader>sp', builtin.find_files,             'Paths' )
 
 -- search submenu
 vks('n', '<leader>sc', builtin.commands,               'Commands')
@@ -67,6 +64,5 @@ vks('n', '<leader>sr', builtin.grep_string,            'References (grep)')
 vks('n', '<leader>sd', builtin.lsp_document_symbols,   'Symbols - document')
 vks('n', '<leader>sw', builtin.lsp_workspace_symbols,  'Symbols - workspace')
 vks('n', '<leader>st', builtin.tags,                   'Tags')
+vks('n', '<leader>/', builtin.current_buffer_fuzzy_find, 'Fuzzy find in current buffer')
 
--- vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, { desc = '[/] Fuzzily search in current buffer]' })
--- E5108: Error executing lua: ...r/start/telescope.nvim/lua/telescope/builtin/__files.lua:413: attempt to call method '_get_hl_from_capture' (a nil value) 

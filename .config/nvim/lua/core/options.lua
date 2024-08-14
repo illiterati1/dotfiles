@@ -3,21 +3,22 @@ vim.opt.showcmd = true
 vim.opt.laststatus = 2  -- always
 vim.opt.autoread = true	-- load file changes from outside vim
 
--- vim.opt.timeoutlen = 500
+-- vim.opt.timeoutlen = 500     -- maybe uncomment once the commands are familiar
 vim.opt.updatetime = 50
 
 -- Screen lines to keep above and below cursor
 vim.opt.scrolloff = 8
 
 vim.opt.number = true   -- line numbers
-vim.opt.relativenumber = false
-vim.opt.cursorline = false
-vim.opt.colorcolumn = '80,120'
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
+-- vim.opt.colorcolumn = '80,120'
 
 -- Only one at a time should be on
 vim.opt.cindent = true
 vim.opt.smartindent = false
 vim.opt.autoindent = false
+----------------------------------
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -50,5 +51,5 @@ vim.opt.mouse = 'a'
 -- vim.api.nvim_set_hl(0, 'WinSeparator', { bg = 'None' })
 
 -- vim.g['netrw_banner'] = 0
--- vim.g['netrw_liststyle'] = 3
+vim.g['netrw_liststyle'] = 0
 -- vim.g['netrw_winsize'] = 25
