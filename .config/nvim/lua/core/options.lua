@@ -29,7 +29,7 @@ vim.opt.wrap = true
 
 vim.opt.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂,eol:⁋'
 
-vim.opt.clipboard = 'unnamed'
+vim.opt.clipboard = 'unnamed,unnamedplus'
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
