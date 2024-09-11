@@ -34,7 +34,11 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git aliases colored-man-pages command-not-found extract safe-paste vi-mode web-search
   pip python
   archlinux systemd
+<<<<<<< HEAD
   )
+=======
+  zshnotes)
+>>>>>>> adjusting dotfiles to use gnu stow
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,7 +51,11 @@ else
   export EDITOR='nvim'
 fi
 
+<<<<<<< HEAD
 export PATH=$PATH:~/.cargo/bin:~/bin
+=======
+export PATH=$PATH:~/.cargo/bin
+>>>>>>> adjusting dotfiles to use gnu stow
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
