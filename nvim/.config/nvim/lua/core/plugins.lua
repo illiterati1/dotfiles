@@ -54,12 +54,6 @@ return require('packer').startup(function(use)
 
   use 'vim-test/vim-test'
 
-  use {
-    "nvim-neorg/neorg",
-    run = ":Neorg sync-parsers",
-    requires = "nvim-lua/plenary.nvim",
-  }
-
   -- use 'folke/trouble'        -- MSVC style error list box
 
   -- status/command line enhancement
