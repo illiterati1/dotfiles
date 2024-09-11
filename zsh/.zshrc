@@ -34,7 +34,7 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git aliases colored-man-pages command-not-found extract safe-paste vi-mode web-search
   pip python
   archlinux systemd
-  zshnotes)
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,7 +47,7 @@ else
   export EDITOR='nvim'
 fi
 
-export PATH=$PATH:~/.cargo/bin
+export PATH=$PATH:~/.cargo/bin:~/bin
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
